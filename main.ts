@@ -5,9 +5,9 @@ import usersRouter  from './routers/usersRouter.ts'
 const HOST = '127.0.0.1'
 const PORT = 7700
 
-
-
 const app = new Application()
+
+// TODO: replace with one routers export and a loop
 
 app.use(rootRouter.routes())
 app.use(rootRouter.allowedMethods())
